@@ -25,12 +25,15 @@ A lightweight and colorized local test runner for AtCoder problem solving using 
 at-coder/
 ├── runner.py
 ├── sample.py
+├── a.py
+├── b.py
+...
 ├── a/
 │   ├── input1.txt
 │   ├── answer1.txt
 │   ├── input2.txt
 │   ├── answer2.txt
-│   └── a.py        # Your solution script
+│   └── ...         # Your solution script
 ├── b/
 │   └── ...         # Next problem
 └── ...
