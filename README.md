@@ -1,10 +1,10 @@
-# 🧮 AtCoder Python Framework (2024)
+# AtCoder Python Framework (2024)
 
 A lightweight and colorized local test runner for AtCoder problem solving using Python. Includes features for sample case setup, auto-run testing, diff highlighting, and clipboard auto-copy on full success.
 
 ---
 
-## 🧰 Tools Included
+## Tools Included
 
 ### `runner.py`
 - Runs your AtCoder solution against `input{i}.txt` and `answer{i}.txt`
@@ -19,7 +19,7 @@ A lightweight and colorized local test runner for AtCoder problem solving using 
 
 ---
 
-## 🗂 Directory Structure
+## Directory Structure
 
 ```
 at-coder/
@@ -46,7 +46,7 @@ Each folder (`a/`, `b/`, etc.) represents a problem, and contains:
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### Generate sample input/output
 ```bash
@@ -62,7 +62,7 @@ python runner.py
 
 ---
 
-## 🧠 Features
+## Features
 
 - 🟥 **WA Diff Highlighting**
 - 🟩 **Green [AC]** if all correct
@@ -72,7 +72,7 @@ python runner.py
 
 ---
 
-## 🧩 Requirements
+## Requirements
 
 - Python 3.x
 - [colorama](https://pypi.org/project/colorama/)
@@ -85,7 +85,7 @@ pip install colorama pyperclip
 
 ---
 
-## 📄 License
+## License
 
 MIT License
 
