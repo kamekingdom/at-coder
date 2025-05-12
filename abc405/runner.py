@@ -7,14 +7,6 @@ import datetime
 import pyperclip
 
 def main():
-    # if len(sys.argv) != 2:
-    #     print("Usage: python atcoder.py <problem_name>")
-    #     sys.exit(1)
-    
-    # problem_name = sys.argv[1]
-    # if ".py" not in problem_name:
-    #     problem_name += '.py'
-    
     problem_file = input("Problem : ").lower()
     problem_name = problem_file + ".py"
     problem_file = list(problem_file)[0]
@@ -58,11 +50,6 @@ def main():
             print(f"-- {execution_time:.3f} sec\n{error_message}")
             continue
 
-        # if execution_time > 2.0:
-        #     print(f"{Fore.YELLOW}{sample_number}[TLE]{Style.RESET_ALL}", end=" ")
-        #     print(f"-- {execution_time:.3f} sec")
-        #     continue
-
         try:
             with open(answer_file_name, 'r', encoding='utf-8') as answerfile:
                 expected_answer = answerfile.read().strip()
@@ -72,7 +59,6 @@ def main():
 
         actual_output = result.stdout.strip()
         if actual_output == expected_answer:
-            # print(f"{sample_number}{Fore.GREEN}[AC] ({execution_time:.3f} sec) {actual_output}{Style.RESET_ALL}")
             print(f"{Fore.GREEN}{sample_number}[AC]{Style.RESET_ALL}", end="")
             print(f" -- {execution_time:.3f} sec")
             ac_counter += 1
@@ -102,15 +88,12 @@ def main():
 import difflib
 
 def highlight_differences(correct_text, incorrect_text):
-    # Prepare the highlighted result
     result = []
-    # Use SequenceMatcher to compare the texts
     s = difflib.SequenceMatcher(None, correct_text, incorrect_text)
     for tag, i1, i2, j1, j2 in s.get_opcodes():
         if tag == 'replace':
             result.append(f"{Fore.RED}{incorrect_text[j1:j2]}{Style.RESET_ALL}")
         elif tag == 'delete':
-            # Do not include deleted parts in the result
             continue
         elif tag == 'insert':
             result.append(f"{Fore.RED}{incorrect_text[j1:j2]}{Style.RESET_ALL}")
