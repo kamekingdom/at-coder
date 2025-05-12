@@ -21,7 +21,7 @@ A lightweight and colorized local test runner for AtCoder problem solving using 
 
 ---
 
-## 🗂 Directory Structure
+## Directory Structure
 
 ```
 at-coder/ abcXXX
